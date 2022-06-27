@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="369.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ClienteControler">
+   <children>
+      <VBox layoutY="42.0" prefHeight="327.0" prefWidth="239.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <ListView fx:id="ListItens" onMouseClicked="#ListItensMouseClicked" prefHeight="275.0" prefWidth="239.0" />
+            <HBox alignment="CENTER" prefHeight="88.0" prefWidth="239.0">
+               <children>
+                  <Button fx:id="BtnNovo" mnemonicParsing="false" onAction="#btnIncluirAction" text="Novo">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="BtnEditar" disable="true" mnemonicParsing="false" onAction="#btnEditarAction" text="Editar">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="BtnExcluir" disable="true" mnemonicParsing="false" onAction="#BtnExcluirAction" text="Excluir" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="465.0" layoutY="42.0" prefHeight="257.0" prefWidth="341.0" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="341.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="64.0" text="CPF:" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TxtCpf" disable="true" prefHeight="25.0" prefWidth="212.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="341.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="65.0" text="Nome:" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TxtNome" disable="true" prefHeight="25.0" prefWidth="210.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="87.0" layoutY="-21.0" prefHeight="43.0" prefWidth="579.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="97.0" text="Cliente" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="239.0" layoutY="299.0" prefHeight="70.0" prefWidth="341.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="BtnCadastrar" disable="true" mnemonicParsing="false" onAction="#btnCadastrasAction" text="Cadastrar">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="BtnCancelar" disable="true" mnemonicParsing="false" onAction="#BtnCancelarAction" text="Cancelar">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

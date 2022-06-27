@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="627.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.CaixaControler">
+   <children>
+      <VBox layoutY="42.0" prefHeight="327.0" prefWidth="673.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="579.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="97.0" text="Data:" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="DatePk" />
+                  <Button fx:id="BtnCarregar" mnemonicParsing="false" onAction="#CarregarCaixa" text="Carregar">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="579.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="97.0" text="Compras" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="tblCompras" prefHeight="190.0" prefWidth="673.0">
+              <columns>
+                <TableColumn fx:id="ColumnComprasData" prefWidth="75.0" text="Data" />
+                <TableColumn fx:id="ColumnComprasTitulo" prefWidth="305.0" text="Titulo" />
+                  <TableColumn fx:id="ColumnComprasQtd" prefWidth="126.0" text="Quantidade" />
+                  <TableColumn fx:id="ColumnComprasValor" prefWidth="164.0" text="valor" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="579.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="97.0" text="Vendas" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="tblVendas" prefHeight="190.0" prefWidth="673.0">
+               <columns>
+                  <TableColumn fx:id="ColumnVendasData" prefWidth="75.0" text="Data" />
+                  <TableColumn fx:id="ColumnVendasTitulo" prefWidth="305.0" text="Titulo" />
+                  <TableColumn fx:id="ColumnVendasQuantidade" prefWidth="126.0" text="Quantidade" />
+                  <TableColumn fx:id="ColumnVendasValor" prefWidth="164.0" text="valor" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="673.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="123.0" prefWidth="180.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="104.0" text="Total de Compras" />
+                        <TextField fx:id="TxtTotalCompras" disable="true" prefHeight="25.0" prefWidth="111.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="123.0" prefWidth="181.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="104.0" text="Total de Vendas" />
+                        <TextField fx:id="TxtTotalVendas" disable="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="123.0" prefWidth="181.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="104.0" text="Total do dia" />
+                        <TextField fx:id="TxtTotalDia" disable="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="87.0" layoutY="-21.0" prefHeight="43.0" prefWidth="579.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="97.0" text="Estoque" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

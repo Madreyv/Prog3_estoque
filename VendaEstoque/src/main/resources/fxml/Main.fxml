@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.MainControler">
+    <children>
+        <HBox alignment="CENTER" layoutX="208.0" layoutY="43.0" prefHeight="42.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <MenuBar fx:id="menuCadButton">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Cadastro">
+                            <items>
+                                <MenuItem fx:id="menuCadCliente" mnemonicParsing="false" onAction="#acessarFormularioCliente" text="Cliente" />
+                                <MenuItem fx:id="menuCadEditora" mnemonicParsing="false" onAction="#acessarFormularioEditora" text="Editora" />
+                        <MenuItem fx:id="menuCadManga" mnemonicParsing="false" onAction="#acessarFormularioManga" text="Manga" />
+                                <MenuItem fx:id="menuCadCompra" mnemonicParsing="false" onAction="#acessarFormularioCompra" text="Compra" />
+                        <MenuItem fx:id="menuCadVenda" mnemonicParsing="false" onAction="#acessarFormularioVenda" text="Venda" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Visualizar">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#acessarEstoque" text="Estoque" />
+                                <MenuItem mnemonicParsing="false" text="Caixa" onAction="#acessarCaixa" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
